@@ -225,3 +225,16 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+header {
+  margin-bottom: 3%;
+  border-bottom: 2px dashed silver;
+}
+header .header-img {
+  margin-bottom: 3%;
+}
+header .header-text {
+  margin-bottom: 2%;
+}
+header .header-text h1 {
+  margin-bottom: 2%;
+}
