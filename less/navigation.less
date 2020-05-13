@@ -6,19 +6,39 @@
     .flex-setup(row, space-around);
     align-items: center;
     padding: 2% 10%;
+    
+    @media @mobile {
+        flex-direction: column;
+        padding-top: 0;
+    }
     nav {
         width: 40%;
         // border: 2px solid red;
         .flex-setup(row, space-evenly);
+
+        @media @mobile {
+            width: 100%;
+            justify-content: space-between;
+        }
         a {
             text-decoration: none;
             color: black;
             font-size: 1.75rem;
+
+            @media @mobile {
+                font-size: 1.55rem;
+            }
         }
     }
     h1 {
         // border: 2px solid green;
         width: 20%;
         text-align: center;
+
+        @media @mobile {
+            width: 100%;
+            font-size: 3.3rem;
+            margin-bottom: 3.5%;
+        }
     }
 }

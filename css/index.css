@@ -176,20 +176,44 @@ img {
   align-items: center;
   padding: 2% 10%;
 }
+@media (max-width: 500px) {
+  .landing {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
 .landing nav {
   width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .landing nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 .landing nav a {
   text-decoration: none;
   color: black;
   font-size: 1.75rem;
 }
+@media (max-width: 500px) {
+  .landing nav a {
+    font-size: 1.55rem;
+  }
+}
 .landing h1 {
   width: 20%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .landing h1 {
+    width: 100%;
+    font-size: 3.3rem;
+    margin-bottom: 3.5%;
+  }
 }
 .footer {
   width: 100%;
