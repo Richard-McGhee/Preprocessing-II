@@ -168,6 +168,29 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.landing {
+  border-bottom: 2px dashed silver;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2% 10%;
+}
+.landing nav {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.landing nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.75rem;
+}
+.landing h1 {
+  width: 20%;
+  text-align: center;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -180,7 +203,7 @@ img {
   padding: 20px;
 }
 .home .content-section {
-  margin: 30px 0;
+  margin: 0 0 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -224,6 +247,24 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home .content-pick .destination .btn a {
+  display: block;
+  width: 90%;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 2.3rem;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: #17A2B8;
+  margin-right: 10%;
 }
 header {
   margin-bottom: 3%;

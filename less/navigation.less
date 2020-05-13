@@ -1,2 +1,24 @@
 // Navigation Styles here
 
+.landing {
+    // border: 2px solid black;
+    border-bottom: @border-setup;
+    .flex-setup(row, space-around);
+    align-items: center;
+    padding: 2% 10%;
+    nav {
+        width: 40%;
+        // border: 2px solid red;
+        .flex-setup(row, space-evenly);
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.75rem;
+        }
+    }
+    h1 {
+        // border: 2px solid green;
+        width: 20%;
+        text-align: center;
+    }
+}
