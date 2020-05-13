@@ -1,21 +1,35 @@
 .home {
 
   .content-section {
-    margin: 30px 0;
+    margin: 0 0 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 90%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 7%;
+      }
 
       img {
         border-radius: 10px;
@@ -27,20 +41,42 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      width: 90%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-left: 5%;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding-right: 1%;
+        padding-left: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 2%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 90%;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +89,59 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin-left: 5%;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        a {
+          .custom-btn();
+          margin-right: 10%;
+
+          @media @mobile {
+            margin-right: 0;
+            .custom-btn(@width:100%, @padding:2%);
+          }
+        }
+      }
     }
   }
 }// home
+
+// Header Styling
+
+header {
+  margin-bottom: 3%;
+  border-bottom: @border-setup;
+  .header-img {
+    margin-bottom: 3%;
+  }
+  .header-text  {
+    margin-bottom: 2%;
+  }
+  .header-text h1 {
+    margin-bottom: 2%;
+
+    @media @mobile {
+      font-size: 3.3rem;
+    }
+  }
+
+  @media @mobile {
+    width: 90%;
+  }
+}
